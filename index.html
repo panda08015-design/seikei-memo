@@ -1,0 +1,79 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff5fa"><title>聖契戦姫メモ | Ver.1.2 キャラクター選択画像更新（テスト広告）</title><style>
+:root{font-family:system-ui,-apple-system,'Noto Sans JP',sans-serif;color:#302b39;background:#fff8fb}*{box-sizing:border-box}body{margin:0}main{max-width:540px;margin:auto;min-height:100dvh;padding:env(safe-area-inset-top) 14px calc(18px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:12px}header{display:flex;align-items:center;justify-content:space-between;padding:13px 4px 0}h1{font-size:20px;margin:0}small{color:#777}button{font:inherit;cursor:pointer;border:0;border-radius:12px;padding:9px 12px;background:#f3e9f0;color:#483648}button:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid #9774dc;outline-offset:2px}.panel{border-radius:20px;padding:14px;box-shadow:0 4px 18px #43324b13;min-height:0}.quick{background:#ffe6f0;border:1px solid #f4b9d2;flex:0 0 42dvh;display:flex;flex-direction:column}.saved{background:#e9e9ff;border:1px solid #bcb8ed;flex:1;min-height:34dvh;display:flex;flex-direction:column}.heading{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}.character{display:flex;align-items:center;gap:9px}.avatar{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;font-size:23px;background:#fff9}.name{font-size:16px;font-weight:800}.sub{font-size:11px;color:#635d72}textarea{width:100%;resize:none;flex:1;min-height:85px;background:#fffdfd;border:1px solid #e4cad8;border-radius:14px;padding:13px;font-size:16px;line-height:1.6;color:#302b39} .actions{display:flex;justify-content:space-between;gap:8px;margin-top:9px;align-items:center}.primary{background:#b94682;color:white;font-weight:700}.saved .primary{background:#514da5}.muted{font-size:11px;color:#696071}.saved-list{overflow-y:auto;min-height:90px;max-height:33dvh;display:flex;flex-direction:column;gap:8px}.note{background:#ffffffd9;border-radius:12px;padding:10px 12px}.note-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.note-title{font-weight:700;font-size:14px;overflow-wrap:anywhere}.note-body{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;margin:7px 0;color:#514c60;max-height:85px;overflow:auto}.note button{font-size:12px;padding:6px 9px}.note-actions{display:flex;gap:6px;flex-shrink:0}.add-row{display:flex;gap:8px;margin-top:10px}.add-row input{flex:1;min-width:0;border:1px solid #c8c4eb;border-radius:12px;padding:10px;font-size:16px}.empty{font-size:13px;color:#6e6a80;text-align:center;padding:25px 8px}.footer{display:flex;justify-content:space-between;align-items:center;gap:6px;padding:0 3px}.footer button{font-size:12px}.status{font-size:11px;color:#5c6170}dialog{border:0;border-radius:18px;padding:20px;width:min(92vw,420px);box-shadow:0 15px 50px #0003}dialog::backdrop{background:#18132480}dialog h2{margin:0 0 12px;font-size:18px}dialog input,dialog textarea{display:block;width:100%;margin:8px 0 12px;border:1px solid #c7c3d3;border-radius:10px;padding:10px;font:inherit}dialog textarea{height:140px}dialog menu{display:flex;justify-content:flex-end;gap:8px;padding:0;margin:10px 0 0}@media(max-height:650px){.quick{flex-basis:38dvh}.saved{min-height:40dvh}}
+
+/* Simple mobile design v2 */
+:root{color-scheme:light;background:#f8f9fc;color:#272b3b}
+body{background:linear-gradient(180deg,#fcfcff,#f4f5fa)}
+main{max-width:480px;padding:calc(env(safe-area-inset-top) + 10px) 14px calc(env(safe-area-inset-bottom) + 20px);gap:13px}
+header{padding:10px 4px 2px}h1{font-size:19px;letter-spacing:.02em}header small{display:block;margin-top:3px;font-size:11px}
+button{background:#fff;border:1px solid #e5e5ee;color:#5c6072;font-weight:600;min-height:38px}
+.panel{border-radius:20px;box-shadow:0 3px 14px #34345a0a;padding:14px}
+.quick{background:#fff0f5;border:1px solid #f5d7e4;flex:0 0 39dvh;min-height:260px}
+.saved{background:#eff0fc;border:1px solid #dbdef6;min-height:290px}
+.heading{margin-bottom:12px}.avatar{width:40px;height:40px;background:#f8d5e4;color:#a84173;font-size:23px;font-weight:800}
+.saved .avatar{background:#d9dcf7;color:#50569e}.name{font-size:15px}.quick .name{color:#84385f}.saved .name{color:#3c468c}
+.sub{color:#8d7e91;font-size:11px}.saved .sub{color:#797da2}
+textarea{background:white;border:1px solid #f0dce5;border-radius:13px;font-size:16px;line-height:1.7}
+.quick .primary{background:#b64c80;border-color:#b64c80;color:white}.saved .primary{background:#5257a1;border-color:#5257a1;color:white}
+.saved-list{max-height:35dvh;min-height:110px}.note{background:#fff;border:1px solid #e6e7f5;border-radius:13px;padding:12px}.note-title{color:#333b74}.note-body{color:#636779}
+.note-actions button{font-size:11px;min-height:30px;padding:5px 7px}.add-row input{background:white;border:1px solid #d8dbf1}
+.footer{padding:4px 3px;gap:12px}.status{font-size:11px}dialog{color:#2c2e3e}
+/* Mobile-compatible editor overlay; avoids dialog.showModal and implicit form submission */
+.editor-overlay{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:20px;background:#18132499}
+.editor-overlay[hidden]{display:none}
+.editor-card{width:min(100%,440px);max-height:calc(100dvh - 40px);overflow:auto;background:white;border-radius:20px;padding:20px;box-shadow:0 15px 50px #0003}
+.editor-card h2{margin:0 0 12px;font-size:18px}
+.editor-card input,.editor-card textarea{display:block;width:100%;margin:8px 0 12px;border:1px solid #c7c3d3;border-radius:10px;padding:10px;font:inherit}
+.editor-card textarea{height:min(38dvh,260px);min-height:140px;resize:vertical}
+.editor-actions{display:flex;justify-content:flex-end;gap:8px}
+.editor-actions .primary{background:#5257a1;color:white;border-color:#5257a1}
+body.editor-open{overflow:hidden}
+@media(max-height:740px){.quick{flex-basis:35dvh;min-height:220px}.saved{min-height:260px}}
+
+.search-row{display:flex;gap:8px;margin:0 0 10px}.search-row input{width:100%;min-width:0;padding:11px 12px;border:1px solid #d8dbf1;border-radius:12px;background:white;font-size:16px}.search-row button{white-space:nowrap}.ad-slot{border:1px dashed #cbd0dc;border-radius:12px;min-height:54px;display:grid;place-items:center;color:#7b8192;background:#f5f6fa;font-size:12px;text-align:center;padding:8px}.ad-slot small{font-size:10px}.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#303449;color:white;padding:11px 16px;border-radius:100px;box-shadow:0 6px 24px #0003;z-index:200;font-size:13px;max-width:90vw;text-align:center}.toast[hidden]{display:none}.search-count{font-size:11px;color:#737899;margin:-3px 0 7px}.footer{flex-wrap:wrap}.saved-list{max-height:32dvh}
+
+/* Ver.0.7: small screens and keyboard accessibility */
+@media(max-height:550px){.quick{min-height:170px;flex-basis:32dvh}.saved{min-height:220px}.editor-overlay{align-items:flex-start;padding:8px}.editor-card{max-height:calc(100dvh - 16px);padding:14px}.editor-card textarea{min-height:90px;height:22dvh}}
+button:active{opacity:.75}input,textarea{touch-action:manipulation}
+
+/* Ver.0.8: character-specific color and navigation */
+:root{--char:#b64c80;--char-light:#ffe6f0}
+.character-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:9px 0}
+.character-tabs button{padding:11px 2px;border:2px solid transparent;border-radius:12px;background:#f1edf2;font-weight:700;font-size:13px;min-width:0;min-height:44px}
+.character-tabs button[aria-selected="true"]{border-color:var(--char);background:var(--char-light);color:var(--char)}
+.quick .avatar,.saved .avatar{background:var(--char-light);color:var(--char)}
+.quick .name,.saved .name,.note-title{color:var(--char)}
+.quick .primary,.saved .primary,.editor-actions .primary{background:var(--char);border-color:var(--char);color:#fff}
+
+/* Ver.0.9 home and chibi cards */
+.home-screen{padding:12px 2px 20px;display:flex;flex-direction:column;gap:18px}
+.home-heading{text-align:center;padding:12px 0 4px}
+.home-heading h2{font-size:21px;color:#8c3569;margin:0 0 6px}
+.home-heading p{font-size:13px;color:#6c6374;margin:0}
+.home-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.home-card{display:flex;flex-direction:column;overflow:hidden;padding:0;border:2px solid var(--card-color);border-radius:18px;background:#fff;box-shadow:0 4px 12px #40304818;min-width:0;text-align:center;min-height:0}
+.home-card:focus-visible{outline:3px solid #6755af;outline-offset:3px}
+.home-card img{width:100%;aspect-ratio:1;object-fit:contain;display:block;background:var(--card-light)}
+.home-card-info{padding:8px 4px 10px;display:flex;flex-direction:column;gap:4px}
+.home-card-name{font-weight:800;font-size:16px;color:var(--card-color)}
+.home-card-count{font-size:12px;color:#5e5266}
+.home-tools{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.home-tools button{font-size:13px}
+.memo-screen[hidden],.home-screen[hidden]{display:none!important}
+.home-back{background:var(--char-light);color:var(--char);border-color:var(--char);margin:2px 0}
+.memo-screen{display:flex;flex-direction:column;gap:12px;min-height:0}
+.memo-screen .quick{flex-basis:35dvh}
+@media(max-width:350px){.home-grid{gap:8px}.home-card-name{font-size:14px}.home-card-count{font-size:11px}}
+
+/* Ver.1.3: privacy policy and UMP options */
+.privacy-links{text-align:center;margin:0 0 12px}.privacy-links button{display:block;margin:8px auto;padding:12px 16px;border:1px solid #9774dc;border-radius:12px;background:white;color:#65428a;font-weight:700}.privacy-links button[hidden]{display:none}.privacy-links a{display:inline-block;padding:10px 14px;min-height:44px;color:#65428a;font-weight:700;font-size:13px;text-decoration:underline;text-underline-offset:3px}.privacy-links a:focus-visible{outline:3px solid #9774dc;outline-offset:2px}
+/* Ver.1.0: reserved space for native test banner */
+:root{--ad-reserved-height:76px}
+body{padding-bottom:calc(var(--ad-reserved-height) + env(safe-area-inset-bottom));}
+.ad-banner-area{position:fixed;bottom:0;left:0;right:0;z-index:40;min-height:calc(var(--ad-reserved-height) + env(safe-area-inset-bottom));padding:7px 12px calc(7px + env(safe-area-inset-bottom));background:#fff7fb;border-top:1px solid #e8c7db;box-shadow:0 -3px 16px #63385b1a;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.ad-banner-placeholder{width:min(100%,468px);min-height:60px;border:2px solid #c29bdb;border-radius:14px;background:linear-gradient(110deg,#f3e4ff,#e4d2f8,#f4e8ff);display:flex;align-items:center;justify-content:center;gap:12px;color:#674779;text-align:center;padding:8px 12px}
+.ad-banner-placeholder strong{display:block;font-size:14px;line-height:1.4}
+.ad-banner-placeholder small{display:block;font-size:10px;line-height:1.4}
+.ad-banner-icon{font-size:26px;line-height:1}
+@media(max-width:360px){.ad-banner-placeholder{gap:7px;padding:6px}.ad-banner-placeholder strong{font-size:13px}.ad-banner-placeholder small{font-size:9px}}
+body.admob-native-ready .ad-banner-area{visibility:hidden}</style><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#b64c80"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" href="icons/icon-192.png"></head><body><main><header><div><h1>✦ 聖契戦姫メモ</h1><small>思いつきを、大切な記録へ。</small></div><button id="export" aria-label="メモをバックアップ">⇩ 保存</button></header><section id="home-screen" class="home-screen"><div class="home-heading"><h2>✧ キャラクターを選択 ✧</h2><p>メモを開きたい戦姫を選んでください</p></div><div id="home-grid" class="home-grid"></div><div class="home-tools"><button id="home-import" type="button">バックアップ読込</button></div><div class="privacy-links"><a href="https://sites.google.com/view/seikeisenki-memo-privacy" target="_blank" rel="noopener noreferrer" aria-label="プライバシーポリシーをブラウザで開く">プライバシーポリシー ↗</a><button id="privacy-options" type="button" hidden>広告のプライバシー設定</button></div></section><div id="memo-screen" class="memo-screen" hidden><button id="home-back" class="home-back" type="button">← キャラクター選択に戻る</button><section class="panel quick" aria-label="一時メモ"><div class="heading"><div class="character"><span class="avatar" aria-hidden="true">♥</span><div><div class="name"><span id="quick-name">キルシの一時メモ</span></div><div class="sub"><span id="quick-sub">気軽に書いてね♪</span></div></div></div><button id="clear">消去</button></div><textarea id="scratch" placeholder="買い物、アイデア、あとでやること…" aria-label="一時メモ本文"></textarea><div class="actions"><span id="status" class="muted" aria-live="polite">自動保存</span><button id="promote" class="primary">大切なメモへ ↓</button></div></section><section class="panel saved" aria-label="大切なメモ"><div class="heading"><div class="character"><span class="avatar" aria-hidden="true">★</span><div><div class="name"><span id="saved-name">キルシの大切なメモ</span></div><div class="sub"><span id="saved-sub">気軽に書いてね♪</span></div></div></div><span id="count" class="muted"></span></div><div class="search-row"><input id="search" type="search" placeholder="大切なメモを検索" aria-label="大切なメモを検索"><button id="search-clear" type="button">クリア</button></div><div id="search-count" class="search-count" aria-live="polite"></div><div id="notes" class="saved-list"></div><div class="add-row"><input id="newtitle" maxlength="80" placeholder="新しいメモのタイトル" aria-label="新しいメモのタイトル"><button id="add" class="primary">＋ 追加</button></div></section><div class="footer"><span class="status">このアプリ内に保存（バックアップ推奨）</span><button id="import">バックアップ読込</button><input type="file" id="file" accept="application/json,.json" hidden></div></div></main><div id="toast" class="toast" hidden role="status" aria-live="polite"></div><div id="editor" class="editor-overlay" hidden role="presentation"><section class="editor-card" role="dialog" aria-modal="true" aria-labelledby="editor-heading"><h2 id="editor-heading">大切なメモを編集</h2><label for="edittitle">タイトル</label><input id="edittitle" maxlength="80" aria-label="タイトル"><label for="editbody">本文</label><textarea id="editbody" aria-label="本文"></textarea><div class="editor-actions"><button type="button" id="cancel-edit">キャンセル</button><button type="button" id="save-edit" class="primary">変更を保存</button></div><p id="edit-error" role="alert" class="muted"></p></section></div><script src="storage.js"></script><script src="app.js"></script><script src="pwa.js"></script></body></html>
